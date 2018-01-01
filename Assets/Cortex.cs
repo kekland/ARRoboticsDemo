@@ -45,5 +45,15 @@ public class Cortex : MonoBehaviour {
 			Motors[2].SetTorque(0f);
 			Motors[3].SetTorque(0f);
 		}
+
+		if(Input.GetKey(KeyCode.U)){ 
+			Motors[4].SetTorque(1.0f);
+		}
+		else if(Input.GetKey(KeyCode.J)) {
+			Motors[4].SetTorque(-1.0f);
+		}
+		else {
+			Motors[4].SetTorque(0f);
+		}
 	}
 }
