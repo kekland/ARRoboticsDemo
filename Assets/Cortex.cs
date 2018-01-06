@@ -57,3 +57,37 @@ public class Cortex : MonoBehaviour {
 		}
 	}
 }
+
+public class Interpreter {
+	
+}
+
+//Code:
+/*
+	[Motor0] leftWheels1
+	[Motor1] leftWheels2
+	[Motor2] rightWheels1
+	[Motor3] rightWheels2
+	[Motor4] lift
+
+	{Sensor1} potentiometer
+
+	func Start {
+	
+	}
+
+	func Update {
+		if KeyPressed(W) {
+			leftWheels1 = 1.0f
+			leftWheels2 = 1.0f
+			rightWheels1 = 1.0f
+			rightWheels2 = 1.0f
+		}
+		elif KeyPressed(S) {
+			leftWheels1 = -1.0f
+			leftWheels2 = -1.0f
+			rightWheels1 = -1.0f
+			rightWheels2 = -1.0f
+		}
+	}
+*/

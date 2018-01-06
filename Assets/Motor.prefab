@@ -163,3 +163,4 @@ MonoBehaviour:
   CurrentTorque: 0
   MaximumAngularVelocity: 10000
   isReversed: 0
+  type: 0

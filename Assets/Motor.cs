@@ -19,6 +19,10 @@ public class Motor : MonoBehaviour {
 
 	[SerializeField]
 	private bool isReversed = false;
+
+	[SerializeField]
+	private MotorType type;
+
 	float acceleration;
 	void Start () {
 		if(attachedShaft == null) {
@@ -48,6 +52,12 @@ public class Motor : MonoBehaviour {
 		if(isReversed) {
 			torqueMultiplier *= -1;	
 		}
-		CurrentTorque = torqueMultiplier * MaximumTorqueAmount;
+		CurrentTorque = torqueMultiplier * MaximumTorqueAmount * (int)type;
+	}
+
+	enum MotorType {
+		LargeTorque = 3,
+		MediumTorque = 2,
+		SmallTorque = 1
 	}
 }
